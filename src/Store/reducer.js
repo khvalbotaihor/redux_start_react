@@ -8,26 +8,20 @@ const reducer = (state = initialState, action) => {
             return {
                 counter: state.counter + 1
             }
-            break;
         case 'DECREMENT':
             return {
                 counter: state.counter - 1
             }
-            break;
         case 'ADD':
             return {
                 counter: state.counter + action.val
             }
-            break;
         case 'SUBSTRACT':
             return {
                 counter: state.counter - action.val
             }
-            break;
         default:
             return state
-            break;
-
     }
 
 
