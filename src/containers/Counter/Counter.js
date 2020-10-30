@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux'; // function that rerurns HOC
+import {connect} from 'react-redux'; // function that returns HOC
 
 import CounterControl from '../../components/CounterControl/CounterControl';
 import CounterOutput from '../../components/CounterOutput/CounterOutput';
@@ -28,8 +28,8 @@ const mapDispatchToProps = dispatch => {
     return {
         onIncrementCounter: () => dispatch({type: 'INCREMENT'}),
         onDecrementCounter: () => dispatch({type: 'DECREMENT'}),
-        onAddCounter: () => dispatch({type: 'ADD'}),
-        onSubstractCounter: () => dispatch({type: 'SUBSTRACT'})
+        onAddCounter: () => dispatch({type: 'ADD', val:10  }),
+        onSubstractCounter: () => dispatch({type: 'SUBSTRACT', val: 15})
     }
 }
 
