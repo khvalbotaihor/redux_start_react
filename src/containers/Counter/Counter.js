@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+
 import {connect} from 'react-redux'; // function that returns HOC
 import * as ActionTypes from '../../Store/actions';
+
+
 import CounterControl from '../../components/CounterControl/CounterControl';
 import CounterOutput from '../../components/CounterOutput/CounterOutput';
 
