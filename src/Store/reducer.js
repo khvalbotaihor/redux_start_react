@@ -14,11 +14,12 @@ const reducer = (state = initialState, action) => {
             return newState
         case actionTypes.DECREMENT:
             return {
-                state,
+                ...state,
                 counter: state.counter - 1
             }
         case actionTypes.ADD:
             return {
+                ...state,
                 counter: state.counter + action.val
             }
         case actionTypes.SUBSTRACT:
